@@ -147,7 +147,7 @@ function matchWords(){
 function evaluateGame(){
     if(!nowPlaying && time == 0){
         Messages.textContent = 'game over';
-        gameScore -= 1
+        gameScore = -1
     }
 }
 
