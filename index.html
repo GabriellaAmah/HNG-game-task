@@ -3,31 +3,34 @@
     <head>
         <title>Word Beater</title>
         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
-            <h1>Word Speed</h1>
-        </header>
-        <div class="container">
-            <div class="column">
-                <p>type the word given in  <span id="seconds"></span> seconds</p>
-
-                <h1 id="currentword">hello</h1>
-                <input type="text" placeholder="start typing" id="typeword">
-                
-                <h5 id="message"></h5>
-
-                <h4>time left: <span id="time">0</span></h4>
-
-                <h4>score: <span id="score">0</span></h4>
-            </div>
-        </div>
-                <div class="jumbotron">
-                    <h5>instruction</h5>
-                    <p>Type each word in the given amount of seconds to score. To play again, just type the current word. Your score will reset.</p>
+        <div class="mybody">
+            <header>
+                <h1>Word Speed</h1>
+            </header>
+            <div class="container container-fluid">
+                <div class="column">
+                    <p>type the word given in  <span id="seconds"></span> seconds</p>
+    
+                    <h1 id="currentword">hello</h1>
+                    <input type="text" placeholder="start typing" id="typeword">
+                    
+                    <h5 id="message"></h5>
+    
+                    <h4>time left: <span id="time">0</span></h4>
+    
+                    <h4>score: <span id="score">0</span></h4>
                 </div>
+            </div>
+                    <div class="jumbotron">
+                        <h5>instruction</h5>
+                        <p>Type each word in the given amount of seconds to score. To play again, just type the current word. Your score will reset.</p>
+                    </div>
+        </div>
 
-                <script src="js/word.js"></script>
+        <script src="js/word.js"></script>
             
     </body>
 </html>
