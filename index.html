@@ -1,36 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Word Beater</title>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div class="mybody">
-            <header>
-                <h1>Word Speed</h1>
-            </header>
-            <div class="container container-fluid">
-                <div class="column">
-                    <p>type the word given in  <span id="seconds"></span> seconds</p>
-    
-                    <h1 id="currentword">hello</h1>
-                    <input type="text" placeholder="start typing" id="typeword">
-                    
-                    <h5 id="message"></h5>
-    
-                    <h4>time left: <span id="time">0</span></h4>
-    
-                    <h4>score: <span id="score">0</span></h4>
-                </div>
-            </div>
-                    <div class="jumbotron">
-                        <h5>instruction</h5>
-                        <p>Type each word in the given amount of seconds to score. To play again, just type the current word. Your score will reset.</p>
-                    </div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Signin Template · Bootstrap</title>
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+          <img
+            src="../image/puzzle-pieces.svg"
+            id="icon"
+            alt="User Icon"
+            width="100px"
+            height="85px"
+          />
         </div>
 
-        <script src="js/word.js"></script>
-            
-    </body>
+        <!-- Login Form -->
+        <form action="/game.html">
+          <input
+            type="text"
+            id="login"
+            class="fadeIn second"
+            name="login"
+            placeholder="Login with email"
+          />
+          <input
+            type="text"
+            id="password"
+            class="fadeIn third"
+            name="login"
+            placeholder="password"
+          />
+          <input type="submit" class="fadeIn fourth" value="Log In" />
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+          <a class="underlineHover" href="#">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
